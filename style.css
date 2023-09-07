@@ -704,8 +704,8 @@ footer {
     }
 }
 
-@media (max-width:402px) {
-    /* Code of S.J, For animation img */
+/*@media (max-width:402px) {
+    /* Code of S.J, For animation img 
     .right-flex3 {
         position: relative;
         width: 230px;
@@ -760,7 +760,7 @@ footer {
         pointer-events: none;
     }
     /* Code End.. SJ/* Code of S.J, For animation img */
-}
+}*/
 
 
 /* 
