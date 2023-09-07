@@ -1,0 +1,143 @@
+/* Reset some default styles */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Basic styling */
+
+.project-sec {
+    background-color: burlywood;
+    background: linear-gradient(to right, burlywood, rgba(222, 184, 135, 0.875), rgba(222, 184, 135, 0.551));
+    /* color: burlywood; */
+    padding: 40px 0;
+}
+
+.project-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-card {
+    border: 1px solid #d40700;
+    /* border-radius: 8px; */
+    /* transition: 0.3s ease; */
+    cursor: pointer;
+    background-color: burlywood;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: calc(33.33% - 40px);
+    /* 3 columns with margin between */
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #d40700;
+    color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #b32700;
+}
+
+
+/* Lower bar line */
+
+.back-home {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #040404e6, #242424, #656565);
+    /* color: var(--primary-color); */
+    color: #fff;
+    /* text-decoration: none; */
+    cursor: pointer;
+    height: 50px;
+    transition: background-color 0.2s;
+}
+
+.icon {
+    font-size: 36px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #f1e8e8;
+}
+
+#icon_1:hover {
+    font-size: 37px;
+    color: rgb(227, 141, 27);
+}
+
+#icon_2:hover {
+    font-size: 37px;
+    color: rgb(104, 227, 27);
+}
+
+#icon_3:hover {
+    font-size: 37px;
+    color: rgba(104, 227, 27, 0.871);
+}
+
+
+/* End Lower bar line */
+
+@media screen and (max-width: 768px) {
+    .project-card {
+        width: calc(50% - 40px);
+        /* 2 columns with margin between */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-card {
+        width: 100%;
+        /* Full width with margin */
+    }
+}

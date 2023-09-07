@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website Design</title>
+    <!-- css file  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utlits.css">
+    <link rel="stylesheet" href="slider_style.css">
+
+    <!-- font awesome cdn  -->
+    <script src="https://kit.fontawesome.com/c3171e834c.js" crossorigin="anonymous"></script>
+
+    <!-- /* HTML BY ChatGPT... */ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style of togglin manu SJ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- END Style of togglin manu SJ -->
+</head>
+
+<body>
+    <!-- header section start  -->
+    <header>
+        <div id="home" class="head-section layout">
+            <div class="nav-bar flex space-between align-center">
+                <div class="logo uppercase f-w-700 letter-spacing2 logo_html">
+                    <div class="Contant_SJ"><span>S</span>J</div>
+                </div>
+
+                <div class="nav-links">
+                    <!-- Toggle manu SJ -->
+                    <div class="toggle-btn" onclick="menuFunction()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+                    <!-- Toggle manu SJ  End-->
+
+                    <ul id="manu_sj" class="flex f-w-600">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#certification">Certifications</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!-- content  -->
+            <div class="content flex align-center">
+                <!-- left section  -->
+                <div class="left flex2">
+                    <h4 class="uppercase letter-spacing2">I'm <span>Shubham</span>Gupta </h4>
+                    <h2 class="my-t-10 uppercase letter-spacing2 f-w-700">Web Designer</h2>
+                    <p class="my-t-10">I am a Student and <span> Web Designer.</span> </p>
+                    <a href="resume(ShubhamGupta).pdf" download="Resume(ShubhamGupta)SJ.pdf"><button class="btn btn2 my-t-20">Download CV</button></a>
+                </div>
+
+                <!-- right section  -->
+                <div class="right-flex3">
+                    <!-- code by SJ, rotate border of img -->
+                    <div class="circle-img">
+                        <img class="IMG_Shubham" src="Shubham_rearange.jpg" alt="Img of Shubham">
+                        <!-- <div class="color-box"></div>     -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- about section start  -->
+    <section class="about-me-sec">
+        <div id="about" class="about-sec layout">
+            <h3 class="uppercase pd-t-30 text-center">About Me</h3>
+            <hr class="w55 my-t-10">
+
+            <div class="about-content flex justify-center align-center">
+                <!-- left side  -->
+                <div class="left flex2">
+                    <h2 class="uppercase letter-spacing2">Web Desinger</h2>
+                    <p class="my-t-10">"I am, a passionate Web Designer with 2+ years of experience. I create visually appealing and user-friendly websites. Proficient in HTML/CSS, JavaScript, and UX design. Let's collaborate to bring your ideas to life."</p>
+
+                    <ul>
+                        <li><span class="f-w-600" id="colour_changing_text">HTML/CSS And JavaScript /DBMS /Python / C & C++/ Java/PHP</span></li>
+                    </ul>
+
+                    <button class="btn my-t-20">Hire Me</button>
+                </div>
+                <!-- right side  -->
+                <div class="right flex3 colour-use">
+                    <!-- <img src="asset/about me img.png" alt="">  -->
+                    <hr>
+
+                    <!-- color used  -->
+                    <div class="dot-color text-center my-t-10">
+                        <h3>color used</h3>
+                        <span id="dot_1" onclick="color(this)" class="dot dot-w"></span>
+                        <span id="dot_2" onclick="color(this)" class="dot dot-b"></span>
+                        <span id="dot_3" onclick="color(this)" class="dot dot-ws"></span>
+                        <span id="dot_4" onclick="color(this)" class="dot dot-bs"></span>
+                        <span id="dot_5" onclick="color(this)" class="dot dot-a"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section end  -->
+
+    <!-- project section start  -->
+    <section class="project-sec">
+        <div id="project" class="project layout">
+            <h3 class="uppercase text-center pd-30">Projects</h3>
+            <div class="project-parent flex justify-center align-center text-center">
+                <div id="project-child-1" class="project-child">
+                    <!-- <img src="asset/digial marketing.jpg" alt=""> -->
+                    <h3>Python Project</h3>
+                    <p>In this i create GUI(Graphical User Interface) with the help of Tkinter,Kivy,wxPython and PyForms!</p>
+                    <a href="python_pro.html"><button class="btn btn2">Explore More</button></a>
+                </div>
+
+                <div id="project-child-2" class="project-child">
+                    <!-- <img src="asset/food-burger.jpg" alt=""> -->
+                    <h3>HTML/CSS/JS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vero hic vitae numquam adipisci expedita!</p>
+                    <a href="Html_Css_pro.html"><button class="btn btn2">Explore More</button></a>
+                </div>
+
+                <div id="project-child-3" class="project-child">
+                    <!-- <img src="asset/social media.jpg" alt=""> -->
+                    <h3>PHP/Java</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vero hic vitae numquam adipisci expedita!</p>
+                    <a href="PHP_JAVA_pro.html"><button class="btn btn2">Explore More</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- project section end  -->
+
+    <!-- experience section start  -->
+    <section class="experience-sec">
+        <div id="certification" class="experience layout">
+            <h3 class="uppercase pd-30 text-center">Experiences</h3>
+            <div class="experience-details flex space-between text-center">
+                <div class="col">
+                    <h3>10</h3>
+                    <p>Projects Done</p>
+                    <!-- Complete Website/ -->
+                </div>
+
+                <div class="col">
+                    <h3>2</h3>
+                    <p>Years</p>
+                </div>
+
+                <div class="col">
+                    <h3>1</h3>
+                    <p>Client</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- experience section end  -->
+
+    <!-- testimonal section start  -->
+    <section class="testimonial-sec">
+        <div id="certification" class="testimonial layout">
+            <h3 class="uppercase text-center pd-30">Certifications</h3>
+            <div class="slider">
+                <!-- fade css -->
+                <div class="myslide fade">
+                    <div class="txt">
+                        <h1>IMAGE 1</h1>
+                        <p>Python<br>Geoprocessing using Python</p>
+                    </div>
+                    <img class="Slider_Img" src="certificate_202350082033844_page-0001.jpg" style="width: 100%; height: 100%;">
+                </div>
+
+                <div class="myslide fade">
+                    <div class="txt">
+                        <h1>IMAGE 2</h1>
+                        <p>Node.JS<br>Essential Training</p>
+                    </div>
+                    <img class="Slider_Img" src="CertificateOfCompletion_Node.js Essential Training_page-0001.jpg" style="width: 100%; height: 100%;">
+                </div>
+
+                <div class="myslide fade">
+                    <div class="txt">
+                        <h1>IMAGE 3</h1>
+                        <p>Python<br>Full course from DataFlair</p>
+                    </div>
+                    <img class="Slider_Img" src="Shubham-Gupta-Free-Python-Certification-Course-Hindi-–-Learn-Python-from-Scratch-Python-H-Certificate-DataFlair_page-0001.jpg" style="width: 100%; height: 100%;">
+                </div>
+
+                <div class="myslide fade">
+                    <div class="txt">
+                        <h1>IMAGE 4</h1>
+                        <p>DSA<br>Data Analytics Specialty from Linkdin</p>
+                    </div>
+                    <img class="Slider_Img" src="CertificateOfCompletion_AWS Certified Data Analytics  Specialty DASC01 Cert Prep 2 Storage and Data Management_page-0001.jpg" style="width: 100%; height: 100%;">
+                </div>
+
+                <div class="myslide fade">
+                    <div class="txt">
+                        <h1>IMAGE 5</h1>
+                        <p>Python<br>CodeChef python certificate</p>
+                    </div>
+                    <img class="Slider_Img" src="shiv_36-Learn Python (2)_page-0001.jpg" style="width: 100%; height: 100%;">
+                </div>
+                <div class="myslide fade">
+                    <div class="txt">
+                        <h1>IMAGE 6</h1>
+                        <p>AI<br> certificate</p>
+                    </div>
+                    <img class="Slider_Img" src="CertificateOfCompletion_Building Career Agility and Resilience in the Age of AI_page-0001.jpg" style="width: 100%; height: 100%;">
+                </div>
+                <!-- /fade css -->
+
+                <!-- onclick js -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="dotsbox" style="text-align:center">
+                    <span class="dot-01" onclick="currentSlide(1)"></span>
+                    <span class="dot-01" onclick="currentSlide(2)"></span>
+                    <span class="dot-01" onclick="currentSlide(3)"></span>
+                    <span class="dot-01" onclick="currentSlide(4)"></span>
+                    <span class="dot-01" onclick="currentSlide(5)"></span>
+                </div>
+                <!-- /onclick js -->
+            </div>
+
+        </div>
+
+    </section>
+    <!-- testimonal section end -->
+
+    <!-- contact-us section start  -->
+    <section class="contact-us-sec">
+        <div id="contact" class="contact-us layout">
+            <h3 class="text-center uppercase pd-30">Contact us</h3>
+            <div class="contact-details flex space-between align-center">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/shudham.roy.5?mibextid=9R9pXO" target="_blank" id="icon_4" class="icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shubham-gupta-90005a268" target="_blank" id="icon_3" class="icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://instagram.com/shubham_gupta18s?igshid=MzRlODBiNWFlZA==" target="_blank" id="icon_2" class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#home.html" target="_blank" id="icon_1" class="icon">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </div>
+
+                <div class="center-sec">
+                    <h5>Contact No.</h5>
+                    <p>Mobile No. +918699514267</p>
+                    <h5>Email Id</h5>
+                    <a href="">
+                        <p>developershubhamgupta<br>185gjimt@gmail.com</p>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- contact-us section end  -->
+
+    <!-- footer section  -->
+    <footer>
+        <div class="footer-sec layout text-center">
+            <p>Copyright &copy; ...</p>
+        </div>
+    </footer>
+    <script>
+        function menuFunction() {
+            var x = document.getElementById("manu_sj");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    <script src="Colour_change_script.js"></script>
+    <script src="slider_script.js"></script>
+</body>
+
+</html>
